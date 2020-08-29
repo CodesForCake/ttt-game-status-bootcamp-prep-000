@@ -54,5 +54,6 @@ def over?(board)
 end
 
 def winner?(board)
-  if won?(board)
+  winningCombo = won?(board)
+  winningCombo.include()
     

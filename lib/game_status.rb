@@ -37,3 +37,7 @@ def full?(board)
   board.all? do |move|
     move == "X" || move == "O"
   end
+end
+
+def draw?(board)
+end

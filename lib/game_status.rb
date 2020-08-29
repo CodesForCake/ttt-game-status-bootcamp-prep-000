@@ -55,10 +55,11 @@ end
 
 def winner?(board)
   winningCombo = won?(board)
-  if winningCombo.any? {|win| board[win] == "X"}
-    return "X"
-  else 
-    return "O"
+  if winningCombo
+    if winningCombo.any? {|win| board[win] == "X"}
+      return "X"
+    else 
+      return "O"
+    end
   end
-end
-    
+end 

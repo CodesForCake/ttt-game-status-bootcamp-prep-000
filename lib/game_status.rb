@@ -53,7 +53,7 @@ def over?(board)
   end
 end
 
-def winner?(board)
+def winner(board)
   winningCombo = won?(board)
   if winningCombo
     if winningCombo.any? {|win| board[win] == "X"}

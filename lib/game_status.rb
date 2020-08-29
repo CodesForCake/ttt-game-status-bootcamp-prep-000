@@ -17,4 +17,16 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |win|
+    index_1 = win[0]
+    index_2 = win[1]
+    index_3 = win[2]
+    
+    position_1 = board[index_1]
+    position_2 = board[index_2]
+    position_3 = board[index_3]
+    
+    if position_1 == "X" && position_2 == "X" && position_3 == "X"
+      return win
+    end
+  end
 end

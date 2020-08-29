@@ -55,5 +55,7 @@ end
 
 def winner?(board)
   winningCombo = won?(board)
-  winningCombo.include()
+  winningCombo.any? do |win|
+    board[win] == "X"
+  end 
     
